@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary SEO Meta Tags -->
+    <title>Mobile Notary Richmond, VA | Lambert Mobile Notary Services</title>
+    <meta name="description" content="Certified mobile notary serving Richmond, Henrico, Chesterfield & Hanover, VA. Apostille & document authentication, loan signings, real estate, and estate document notarization. We travel to you — evenings and weekends available.">
+    <meta name="keywords" content="mobile notary Richmond VA, certified notary public, apostille Virginia, traveling notary, loan signing agent, mobile notary near me, real estate notary, power of attorney notarization, legal document signing, Henrico County notary, Chesterfield notary">
+    <meta name="author" content="Lambert Mobile Notary Services">
+
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --border: #e2e8f0;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-light);
+        }
+
+        /* Navigation */
+        header {
+            background-color: var(--white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Merriweather', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo i {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .btn-header {
+            background-color: var(--accent);
+            color: var(--white) !important;
+            padding: 0.5rem 1.25rem;
+            border-radius: 0.375rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn-header:hover {
+            background-color: var(--accent-hover) !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
+            color: var(--white);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--white);
+            padding: 0.875rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 0.375rem;
+            transition: background-color 0.2s, transform 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+            padding: 0.875rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 0.375rem;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--primary);
+        }
+
+        /* Section Setup */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.25rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem 1.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.2s;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1.25rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .card-badge {
+            position: absolute;
+            top: -0.65rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            white-space: nowrap;
+        }
+
+        .card-badge.featured {
+            background-color: var(--accent);
+            color: var(--white);
+        }
+
+        .card-badge.soon {
+            background-color: #e2e8f0;
+            color: var(--text-muted);
+        }
+
+        /* Pricing Section */
+        .pricing-container {
+            background-color: var(--white);
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .pricing-header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .pricing-header h3 {
+            font-size: 1.75rem;
+            font-family: 'Merriweather', serif;
+        }
+
+        .pricing-header span {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #fbbf24;
+        }
+
+        .pricing-body {
+            padding: 2.5rem;
+        }
+
+        .pricing-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pricing-item:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-details h4 {
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .pricing-details p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .price-tag {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            white-space: nowrap;
+        }
+
+        .pricing-note {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background-color: #eff6ff;
+            border-left: 4px solid var(--accent);
+            color: #1e40af;
+            font-size: 0.9rem;
+        }
+
+        /* SEO Content / About Section */
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .checklist {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .checklist li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .checklist i {
+            color: #10b981;
+        }
+
+        /* Contact / Booking Section */
+        .contact-section {
+            background-color: var(--white);
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            padding: 3rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 0.375rem;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .contact-info-card {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .info-item i {
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin-top: 0.25rem;
+        }
+
+        .todo-flag {
+            display: inline-block;
+            margin-left: 0.5rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #b45309;
+            background-color: #fef3c7;
+            padding: 0.15rem 0.5rem;
+            border-radius: 0.25rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 3rem 2rem 1.5rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-text {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
+            .about-section, .contact-grid { grid-template-columns: 1fr; }
+            .pricing-item { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+            .price-tag { align-self: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-stamp"></i> Lambert Mobile Notary
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="btn-header">Book Appointment</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Mobile Notary & Loan Signing Services in Richmond, VA</h1>
+            <p>Certified, bonded, and insured mobile notary serving Richmond, Henrico, Chesterfield, and Hanover County. We travel to your home, office, hospital, or local venue for general notarizations, apostille &amp; document authentication, loan signings, and more.</p>
+            <div class="cta-group">
+                <a href="#contact" class="btn-primary"><i class="fa-solid fa-calendar-check"></i> Schedule an Appointment</a>
+                <a href="tel:" class="btn-secondary"><i class="fa-solid fa-phone"></i> Call/Text (Add Phone Number)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-title">
+            <h2>Our Mobile Notary Services</h2>
+            <p>Providing seamless, error-free document notarization at your convenience throughout the Richmond metro area.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-file-signature"></i>
+                <h3>General Document Notarization</h3>
+                <p>Oaths, affirmations, affidavits, and parental consent forms, notarized at your home, office, or job site.</p>
+            </div>
+            <div class="service-card">
+                <span class="card-badge featured">Most Requested</span>
+                <i class="fa-solid fa-earth-americas"></i>
+                <h3>Apostille & Document Authentication</h3>
+                <p>We prepare your document correctly and handle the apostille process through the Virginia Secretary of the Commonwealth — for diplomas, birth/marriage certificates, powers of attorney, background checks, and adoption paperwork.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-house-chimney-user"></i>
+                <h3>Real Estate & Loan Signings</h3>
+                <p>Notary signing agent for mortgages, refinances, HELOCs, and buyer/seller packages.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <h3>Estate & Healthcare Documents</h3>
+                <p>Power of attorney, wills, trusts, and healthcare directives notarized in person.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-hospital-user"></i>
+                <h3>Hospital & Medical Notarization</h3>
+                <p>Sensitive and prompt notarization services at hospitals, assisted living centers, and nursing homes.</p>
+            </div>
+            <div class="service-card">
+                <span class="card-badge soon">Coming Soon</span>
+                <i class="fa-solid fa-laptop"></i>
+                <h3>Remote Online Notarization (RON)</h3>
+                <p>Video-call notarization for clients who can't meet in person — coming soon, pending Virginia RON commission.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparent Pricing Section -->
+    <section id="pricing">
+        <div class="section-title">
+            <h2>Clear & Transparent Pricing</h2>
+            <p>No hidden fees. Honest rates calculated upfront for your mobile notary appointment.</p>
+        </div>
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <h3>Travel & Convenience Fee Structure</h3>
+                <span>Example rates — update before publishing</span>
+            </div>
+            <div class="pricing-body">
+                <div class="pricing-item">
+                    <div class="pricing-details">
+                        <h4>Standard Service Radius (0 – 25 Miles)</h4>
+                        <p>Includes travel to your designated location within the Richmond metro area.</p>
+                    </div>
+                    <div class="price-tag">$50 Base Rate</div>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-details">
+                        <h4>Extended Travel Surcharge</h4>
+                        <p>For locations outside of our standard 25-mile travel radius.</p>
+                    </div>
+                    <div class="price-tag">+$10 / 5 miles</div>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-details">
+                        <h4>State Notarial Act Fees</h4>
+                        <p>Per signature/stamp, regulated by Virginia state law.</p>
+                    </div>
+                    <div class="price-tag">Standard State Fee</div>
+                </div>
+
+                <div class="pricing-note">
+                    <i class="fa-solid fa-circle-info"></i> <strong>Example Calculation:</strong> A location 35 miles away would cost $50 (Base Rate) + $20 (Extended travel: 10 miles outside radius) = $70 Travel/Convenience fee + standard state signature fee. Replace these figures with your actual rates before publishing.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Rich / About Section -->
+    <section id="about">
+        <div class="about-section">
+            <div class="about-text">
+                <h2>Why Choose Lambert Mobile Notary Services?</h2>
+                <p>Finding a trusted <strong>mobile notary near me</strong> shouldn't be complicated. We bring legal document signing — including <strong>apostille and document authentication</strong> — directly to your doorstep across Richmond, Henrico, Chesterfield, and Hanover County, saving you time, travel, and stress.</p>
+                <p>Whether you need a <strong>loan signing agent</strong> for a mortgage refinance or an urgent <strong>power of attorney notarization</strong> at a local medical center, we strictly adhere to Virginia notary law to ensure every document is executed correctly the first time.</p>
+                <ul class="checklist">
+                    <li><i class="fa-solid fa-circle-check"></i> Virginia Commissioned Notary Public</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Bonded & E&O Insured</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 4+ Years of Experience, Background Screened</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Evening & Weekend Appointments Available</li>
+                </ul>
+            </div>
+            <div class="service-card" style="text-align: left; background: #eff6ff; border-color: #bfdbfe;">
+                <h3 style="color: var(--accent);"><i class="fa-solid fa-shield-halved"></i> What to Bring to Your Appointment</h3>
+                <p style="margin-bottom: 1rem;">To ensure a successful notarization, please prepare the following:</p>
+                <ul style="list-style-type: disc; padding-left: 1.25rem; color: var(--text-dark);">
+                    <li style="margin-bottom: 0.5rem;"><strong>Valid Government-Issued Photo ID</strong> (Driver's License, Passport, Military ID).</li>
+                    <li style="margin-bottom: 0.5rem;">Complete, unsigned document(s) (Sign in front of the Notary).</li>
+                    <li style="margin-bottom: 0.5rem;">All signers physically present at time of appointment.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact">
+        <div class="contact-section">
+            <div class="section-title" style="margin-bottom: 2rem;">
+                <h2>Schedule Your Mobile Notary Visit</h2>
+                <p>Fill out the form below to receive a quick quote and confirm your appointment time.</p>
+            </div>
+            <div class="contact-grid">
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thanks! This form is not yet connected to a live inbox — booking requests are not actually being received.');">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" required placeholder="(804) 000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="service-type">Type of Document / Service *</label>
+                        <select id="service-type" required>
+                            <option value="">Select a service...</option>
+                            <option value="general">General Notary (Affidavits, Consent Forms)</option>
+                            <option value="apostille">Apostille & Document Authentication</option>
+                            <option value="realestate">Loan Signing / Real Estate Closing</option>
+                            <option value="estate">Estate & Healthcare Documents (POA, Wills)</option>
+                            <option value="hospital">Hospital / Healthcare Facility Visit</option>
+                            <option value="other">Other Business Services</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Signing Location Zip Code *</label>
+                        <input type="text" id="location" required placeholder="e.g. 23221">
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Submit Request</button>
+                </form>
+
+                <div class="contact-info-card">
+                    <h3>Contact Us Directly</h3>
+                    <p style="color: var(--text-muted);">Have questions or need an immediate/same-day appointment? Reach out directly via phone or email.</p>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong>Phone / Text</strong>
+                            <p>Add Your Number<span class="todo-flag">TODO</span></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>annfranceslambert@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>Hours of Operation</strong>
+                            <p>By Appointment — Weekdays, Evenings & Weekends</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>Service Area</strong>
+                            <p>Richmond, Henrico, Chesterfield & Hanover County, VA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo" style="color: white;">
+                <i class="fa-solid fa-stamp" style="color: var(--accent);"></i> Lambert Mobile Notary
+            </div>
+            <div class="footer-text">
+                Providing reliable mobile notary and signing agent services to your door throughout Richmond, VA.
+            </div>
+        </div>
+        <p class="footer-text">&copy; 2026 Lambert Mobile Notary Services. All rights reserved. | <a href="#" style="color: #94a3b8;">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
