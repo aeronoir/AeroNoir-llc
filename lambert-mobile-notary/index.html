@@ -71,6 +71,23 @@
             color: var(--accent);
         }
 
+        .logo-img {
+            height: 44px;
+            width: auto;
+            display: block;
+        }
+
+        footer .logo-img {
+            height: 40px;
+        }
+
+        footer .logo-badge {
+            display: inline-flex;
+            background-color: var(--white);
+            padding: 0.6rem 1rem;
+            border-radius: 0.5rem;
+        }
+
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -485,9 +502,9 @@
     <!-- Navigation Header -->
     <header>
         <div class="nav-container">
-            <div class="logo">
-                <i class="fa-solid fa-stamp"></i> Lambert Mobile Notary
-            </div>
+            <a href="#" class="logo">
+                <img src="assets/lambert-logo.png" alt="Lambert Mobile Notary Services" class="logo-img">
+            </a>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#pricing">Pricing</a></li>
@@ -697,8 +714,8 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="logo" style="color: white;">
-                <i class="fa-solid fa-stamp" style="color: var(--accent);"></i> Lambert Mobile Notary
+            <div class="logo-badge">
+                <img src="assets/lambert-logo.png" alt="Lambert Mobile Notary Services" class="logo-img">
             </div>
             <div class="footer-text">
                 Providing reliable mobile notary and signing agent services to your door throughout Richmond, VA.
