@@ -29,7 +29,10 @@ Sourced from third-party guides, not a direct fetch of the state's own page (DNS
 5. Not available for federal documents (e.g. FBI background checks) — those go through the U.S. Department of State instead.
 6. Typical turnaround by mail: ~3-5 weeks per third-party sources; in-person by appointment is same-day for the state processing step once at the counter.
 
-## Marketing
+## Marketing & funnel architecture (decided Oct 2026)
 - Flagship lead-gen angle: Apostille (per earlier REFINE strategy work)
-- Landing page: `lambert-mobile-notary/index.html` (static, standalone — not the Lovable/Supabase booking app)
-- Lovable booking site project: edbb186e-c0cc-40be-95df-c553b4d48a3f
+- **Canonical site = the Lovable app** (project `edbb186e-c0cc-40be-95df-c553b4d48a3f`, preview_url `https://id-preview--edbb186e-c0cc-40be-95df-c553b4d48a3f.lovable.app`). This is the ONE link every marketing access point (GBP, social bios, QR codes, business cards, directory listings, referral partners) should point to.
+- `lambert-mobile-notary/index.html` (this repo, static HTML) is a **retired/backup copy only** — it was never merged to `main` or deployed live, and should NOT be promoted or linked anywhere going forward, to avoid the exact two-front-doors fragmentation problem this decision fixed. Keep it as a static fallback, not an active funnel entry point.
+- Booking data source of truth: the Jotform intake (`https://form.jotform.com/262985862427068`), now embedded directly on the Lovable app's `/book` page (merged Oct 2026). The app's own Supabase `bookings` table stopped receiving new submissions at that point — admin dashboard now shows a note pointing to Jotform/Mailchimp for current leads. The `lead_capture` table (checklist email signups) is unaffected and still live.
+- **Outstanding blocker for physical/print marketing:** the Lovable app is still unpublished (`is_published: false`) with no custom domain — only the long preview_url above. Before printing business cards, signage, or locking the URL into GBP permanently, publish the app and connect a real domain (e.g. lambertmobilenotaryservices.com) so the canonical link is short and permanent.
+- Funnel shape: Awareness (GBP, content, referral partners, directories, physical signage — all one URL) → Capture (apostille-led landing + checklist email capture → Mailchimp) → Conversion (Jotform intake on `/book`) → Retention (Mailchimp nurture, GBP review ask, referral incentive for title companies/attorneys).
