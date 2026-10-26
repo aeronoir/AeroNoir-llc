@@ -430,6 +430,16 @@
             border-color: var(--accent);
         }
 
+        .jotform-embed-wrap {
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .jotform-embed-wrap iframe {
+            display: block;
+        }
+
         .contact-info-card {
             display: flex;
             flex-direction: column;
@@ -657,37 +667,9 @@
                 <p>Fill out the form below to receive a quick quote and confirm your appointment time.</p>
             </div>
             <div class="contact-grid">
-                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thanks! This form is not yet connected to a live inbox — booking requests are not actually being received.');">
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" required placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" required placeholder="john@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" required placeholder="(804) 000-0000">
-                    </div>
-                    <div class="form-group">
-                        <label for="service-type">Type of Document / Service *</label>
-                        <select id="service-type" required>
-                            <option value="">Select a service...</option>
-                            <option value="general">General Notary (Affidavits, Consent Forms)</option>
-                            <option value="apostille">Apostille & Document Authentication</option>
-                            <option value="realestate">Loan Signing / Real Estate Closing</option>
-                            <option value="estate">Estate & Healthcare Documents (POA, Wills)</option>
-                            <option value="hospital">Hospital / Healthcare Facility Visit</option>
-                            <option value="other">Other Business Services</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="location">Signing Location Zip Code *</label>
-                        <input type="text" id="location" required placeholder="e.g. 23221">
-                    </div>
-                    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Submit Request</button>
-                </form>
+                <div class="jotform-embed-wrap">
+                    <iframe src="https://form.jotform.com/262985862427068" style="width:100%;height:700px;border:none;" title="Lambert Mobile Notary Services Intake Form"></iframe>
+                </div>
 
                 <div class="contact-info-card">
                     <h3>Contact Us Directly</h3>
