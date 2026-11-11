@@ -5,7 +5,7 @@ Persistent notes for this sub-project. Keep this updated as facts change; don't 
 ## Business facts
 - Brand: Lambert Mobile Notary Services
 - Service area: Richmond, VA metro (Richmond, Henrico, Chesterfield, Hanover County)
-- Contact: annfranceslambert@gmail.com (phone still TBD — see landing page TODO flag)
+- Contact: info@lambertmobilenotary.com (phone still TBD — see landing page TODO flag)
 - Credentials: VA Commissioned Notary, bonded & E&O insured (voluntary — VA does not require notary bonding), 4+ years experience, background screened
 - Availability: by appointment, evenings & weekends
 
