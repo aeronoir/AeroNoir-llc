@@ -5,7 +5,7 @@ Persistent notes for this sub-project. Keep this updated as facts change; don't 
 ## Business facts
 - Brand: Lambert Mobile Notary Services
 - Service area: Richmond, VA metro (Richmond, Henrico, Chesterfield, Hanover County)
-- Contact: info@lambertmobilenotary.com (phone still TBD — see landing page TODO flag)
+- Contact: info@lambertmobilenotary.com, phone (804) 213-2553
 - Credentials: VA Commissioned Notary, bonded & E&O insured (voluntary — VA does not require notary bonding), 4+ years experience, background screened
 - Availability: by appointment, evenings & weekends
 
@@ -34,5 +34,5 @@ Sourced from third-party guides, not a direct fetch of the state's own page (DNS
 - **Canonical site = the Lovable app** (project `edbb186e-c0cc-40be-95df-c553b4d48a3f`, preview_url `https://id-preview--edbb186e-c0cc-40be-95df-c553b4d48a3f.lovable.app`). This is the ONE link every marketing access point (GBP, social bios, QR codes, business cards, directory listings, referral partners) should point to.
 - `lambert-mobile-notary/index.html` (this repo, static HTML) is a **retired/backup copy only** — it was never merged to `main` or deployed live, and should NOT be promoted or linked anywhere going forward, to avoid the exact two-front-doors fragmentation problem this decision fixed. Keep it as a static fallback, not an active funnel entry point.
 - Booking data source of truth: the Jotform intake (`https://form.jotform.com/262985862427068`), now embedded directly on the Lovable app's `/book` page (merged Oct 2026). The app's own Supabase `bookings` table stopped receiving new submissions at that point — admin dashboard now shows a note pointing to Jotform/Mailchimp for current leads. The `lead_capture` table (checklist email signups) is unaffected and still live.
-- **Published Oct 2026** to `https://lambert-mobile-notary.lovable.app` (deployment_id cee2e7c4-6dee-494e-879e-13ed2940317f) — this replaces the preview_url as the canonical link for all marketing access points. Still worth connecting a real custom domain (e.g. lambertmobilenotaryservices.com) before committing to physical/print marketing (business cards, signage) — see Lovable's Project → Settings → Domains panel for the exact DNS records to add, since those are generated per-domain and must come from that panel, not guessed.
+- **Published Oct 2026** to `https://lambert-mobile-notary.lovable.app`. **Custom domain `https://lambertmobilenotary.com` is live and connected (confirmed Nov 2026)** — this is now the canonical link for all marketing access points (GBP, social bios, QR codes, business cards, directory listings). `www` subdomain provisioning previously showed as failed in Lovable's domain panel — worth double-checking that's resolved before relying on the `www.` variant anywhere.
 - Funnel shape: Awareness (GBP, content, referral partners, directories, physical signage — all one URL) → Capture (apostille-led landing + checklist email capture → Mailchimp) → Conversion (Jotform intake on `/book`) → Retention (Mailchimp nurture, GBP review ask, referral incentive for title companies/attorneys).
